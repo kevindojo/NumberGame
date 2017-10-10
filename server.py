@@ -19,6 +19,7 @@ def hint():
         session ['hint']= "Too Low"
     if guess == session ['number']:
         session ['hint']= "winner, play again!"
+        return redirect('/')
 
 
     return redirect('/result')
